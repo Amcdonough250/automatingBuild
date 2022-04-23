@@ -25,3 +25,15 @@ jobs:
       - name: integration test
         run: |
           python3 integration_tests.py
+
+  
+ 
+      
+      - name: Build and push Docker image
+      - uses: mr-smithers-excellent/docker-build-push@v4
+      - with:
+            image: amcdonough250/finalProj
+            registry: docker.io
+            username: ${{ secrets.DOCKER_USERNAME }}
+            password: ${{ secrets.DOCKER_PASSWORD }}
+      
