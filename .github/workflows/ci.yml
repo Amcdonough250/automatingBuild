@@ -40,5 +40,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
             push: true
-            tags: Amcdonough250/automatingBuild:latest
+            tags: amcdonough250/automating_build:latest
       
