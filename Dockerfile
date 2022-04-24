@@ -7,7 +7,8 @@ WORKDIR /usr/src/app
 COPY . .
 
 # install dependencies
-RUN pip install --no-cache-dir
+RUN pip3 install --no-cache-dir 
+
 
 # run the command
 CMD ["python3", "./automating_build"]
