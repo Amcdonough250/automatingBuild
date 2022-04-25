@@ -3,7 +3,7 @@ FROM python:3
 # set a directory for the app
 WORKDIR /usr/src/app
 
-COPY requirements.txt requirements.txt
+COPY . .
 
 # install dependencies
 RUN pip3 install --no-cache-dir -r requirements.txt
