@@ -1,0 +1,40 @@
+Replicating the process of my project
+
+I used github actions and Docker.
+
+First you will need to create a game and write unit 
+and integration tests on your local machine. Next you 
+will need to create a directory .github/workflows. 
+Inside of your workflows directory you will need to create 
+a .yml file. In your .yml file you will need to add 
+dependencies or any libraries like py coverage to be 
+able to  run the commands to automate the testing and 
+building process. Next you should then push your files 
+and folders to your github account. By adding in the 
+.github/workflows/.yml to your files it will automatically
+trigger the github actions tab. If all tests passed in 
+github actions then we can create a Dockerfile to then 
+deploy the image to DockerHub. 
+
+To deploy the github files to Docker as an image you need 
+to add a deploy section in your .yml file. Then in the 
+same directory as your game file and test files, create 
+a Dockerfile to then deploy the image.  After you have 
+created the Dockerfile and updated the .yml file you can 
+then push your local files to your github account. Pushing 
+your local changes to github should trigger the actions tab, 
+where it  tests and builds the files and then deploys them. 
+If all went well you can open your DockerHub account and see 
+the new image that was pushed to it from github.
+
+You can now pull the image from Dockerhub and run it anywhere 
+that has the Docker daemon running in the background. If you 
+do not have docker installed just install it through the command 
+line <paru> <docker>. Next start the service 
+<sudo> <systemctl> <start> <docker.service>. 
+After you have docker running pull the image from the cloud.
+ <sudo> <docker> <pull> <your repository/your image>
+Next run the image. 
+<sudo> <docker> <run> <-it>  <your repository/your image>.
+You have now automated your testing and building, then deployed 
+it to a cloud service!!!!!
