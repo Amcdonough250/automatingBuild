@@ -1,4 +1,7 @@
+# cs 491 final project
+
 import random
+
 
 
 def create_deck():
