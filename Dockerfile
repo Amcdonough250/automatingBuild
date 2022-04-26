@@ -12,4 +12,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # run the command
-CMD ["python3", "./automating_build"]
+CMD ["python3", "./Game_01.py"]
