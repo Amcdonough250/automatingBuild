@@ -25,6 +25,12 @@ jobs:
       - name: integration test
         run: |
           python3 integration_tests.py
+      - name: coverage data 
+        run: |
+          coverage run -m unittest discover
+      - name: coverage report
+        run: |
+          coverage report
 
   deploy:
     runs-on: ubuntu-latest
