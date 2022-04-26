@@ -1,0 +1,27 @@
+For my final project in CS 491 I will be using a game that mixes 
+tic-tac-toe with rummy. The game uses a 2D-array for both rummy 
+and tic-tac-toe. The game is a single player game for simplicity 
+that uses a 32 card deck with 4 suits “HR”, “DM”, “CL”, “SP”. 
+The values of the cards are 2-9. A valid example of the 2D-array 
+would be [DM,9]. There are a few ways to win the game.
+
+• Simple set, 10 points: all cards on a row/column/diagonal 
+on the board must have the same suit (can have different face values).
+ Examples of two simple sets are ["CL", 8], ["CL", 5], ["CL", 7] 
+ and ["HR", 8], ["HR", 3], ["HR", 6].
+
+• Set, 15 points: all cards on a row/column/diagonal on the 
+board must have the same face value (can have different suits). 
+Two sample sets can be as follows: ["HR", 3], ["DM", 3], ["SP", 3] 
+and ["DM", 8], ["SP", 8], ["CL", 8].
+
+• Simple run, 20 points: all cards on a row/column/diagonal on 
+the board must have consecutive face values either in the increasing 
+or decreasing order (can have different suits). For example ["SP", 2], 
+["DM", 3], ["CL", 4] and ["CL", 6], ["CL", 5], ["DM", 4] are 
+simple runs.
+
+• Run, 25 points: Cards on a row/column/diagonal on the board must 
+have the same suit and consecutive face values either in the 
+increasing or decreasing order. Examples of runs are ["SP", 2], 
+["SP", 3], ["SP", 4] and ["CL", 6], ["CL", 5], ["CL, 4].
