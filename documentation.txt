@@ -1,4 +1,12 @@
+Github URL:
+https://github.com/Amcdonough250/automatingBuild
+
+DockerHub URL:
+https://hub.docker.com/repository/docker/amcdonough250/automating_build
+
+
 Replicating the process of my project
+
 
 I used github actions and Docker.
 

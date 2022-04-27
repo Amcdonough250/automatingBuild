@@ -1,6 +1,12 @@
 # automatingBuild
 cs491FinalProj
 
+github URL:
+https://github.com/Amcdonough250/automatingBuild
+
+DockerHub URL:
+https://hub.docker.com/repository/docker/amcdonough250/automating_build
+
 To download image from DockerHub on Arch Linux use the commands
 sudo docker pull amcdonough250/automating_build
 
